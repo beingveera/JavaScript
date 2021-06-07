@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>An Objects class</title>
+</head>
+<body>
+
+	<script type="text/javascript">
+
+		function sum(...argument){
+			if(argument.length === 1){
+				const [firstArg] =argument;
+				if(firstArg instanceof Array){
+					return sum(...firstArg)
+				}
+			}
+			return argument.reduce((a,b) => a+b)
+		}
+
+		console.log(sum(2,3));
+
+		
+	</script>
+
+</body>
+</html>
