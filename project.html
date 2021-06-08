@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Light On/Off</title>
+
+	<style type="text/css">
+		*{
+			padding: 0%;
+			margin: 0%;
+			box-sizing: border-box;
+		}
+
+		body{
+			height: 100vh;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+
+		}
+
+		.main{
+			padding: 200px;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			
+		}
+
+		button{
+			height: 35px;
+			width: 80px;
+			text-align: center;
+			justify-content: center;
+			font-weight: bold;
+			color: #a3a4a5;
+		}
+
+	</style>
+</head>
+<body>
+	<img src="pic_bulbon.gif" class="main" id="Light">
+	<button onclick='on()' id="btn"> Light on</button>
+	<button onclick='off()' id="btn"> Light off</button>
+
+
+	<script type="text/javascript">
+
+		function on(){
+				document.getElementById('Light').src="pic_bulbon.gif";
+
+			}
+
+		function off(){
+				document.getElementById('Light').src="pic_bulboff.gif";
+
+			}
+
+
+	</script>
+
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Running</title>
+</head>
+<body>
+
+	<h2 id="big"></h2>
+
+
+	<script type="text/javascript">
+
+		var ch=['Web Developer','Django Developer'];
+		for(var i in ch){
+			document.getElementById('big').innerHTML=ch[i];
+		}
+		sleep(100).then(() => {
+			document.write("lokesh");
+		});
+
+		function sleep(mili){
+			return new Promise(resolve => setTimeout(resolve,mili));
+		}
+	
+
+	
+
+	
+		
+		
+	</script>
+
+</body>
+</html>
